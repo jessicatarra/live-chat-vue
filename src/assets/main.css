@@ -6,6 +6,7 @@ body {
     width: 90%;
     max-width: 960px;
     padding: 0 1.5em;
+    margin: auto;
 }
 .error {
     color: #ff3f80;
