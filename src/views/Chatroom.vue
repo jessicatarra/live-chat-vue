@@ -1,8 +1,10 @@
 <template>
   <div class="container">
-    <Navbar />
-    <ChatWindow />
-    <NewChatForm />
+    <div class="chatroom">
+      <Navbar />
+      <ChatWindow />
+      <NewChatForm />
+    </div>
   </div>
 </template>
 
@@ -29,4 +31,11 @@ export default {
 </script>
 
 <style>
+  .chatroom {
+      margin: 80px auto;
+      border-radius: 20px;
+      box-shadow: 2px 4px 6px rgba(28, 6, 49, 0.1);
+      background: white;
+  }
+
 </style>

@@ -27,9 +27,17 @@ export default {
   nav {
     padding: 20px;
     border-bottom: 1px solid #eee;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+  @media screen and (max-width: 600px){
+    nav {
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
+    button {
+      margin-top: 1rem;
+    }
   }
   nav p {
     margin: 2px auto;

@@ -1,6 +1,6 @@
 <template>
   <div class="welcome container">
-    <div v-if="showLogin">
+    <div class="welcome show-login" v-if="showLogin">
       <h2>Login</h2>
       <LoginForm @login="enterChat" />
       <p>No account yet? <span @click="showLogin = false">Signup</span> instead.</p>
@@ -36,23 +36,36 @@ export default {
     text-align: center;
     padding: 20px 0;
   }
+  .welcome .show-login {
+    margin: 80px auto;
+    border-radius: 20px;
+    box-shadow: 2px 4px 6px rgba(28,6,49,.1);
+    background: #fff;
+    padding: 20px;
+  }
   /* form styles */
   .welcome form {
-    width: 300px;
-    margin: 20px auto;
+    margin: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  @media screen and (max-width: 600px) {
+    .welcome form {
+      margin: 0;
+    }
   }
   .welcome label {
     display: block;
     margin: 20px 0 10px;
   }
   .welcome input {
-    width: 100%;
     padding: 10px;
+    margin-bottom: 1rem;
     border-radius: 20px;
     border: 1px solid #eee;
     outline: none;
     color: #999;
-    margin: 10px auto;
   }
   .welcome span{
     font-weight: bold;
