@@ -43,6 +43,11 @@ export default {
     background: #fff;
     padding: 20px;
   }
+  @media screen and (min-width: 998px) {
+    .welcome .show-login {
+      width: 50%;
+    }
+  }
   /* form styles */
   .welcome form {
     margin: 3rem;
