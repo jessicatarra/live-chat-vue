@@ -29,3 +29,4 @@ pnpm-debug.log*
 firebase.json
 firestore.indexes.json
 firestore.rules
+database.rules.json
